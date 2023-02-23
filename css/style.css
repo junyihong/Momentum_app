@@ -1,0 +1,140 @@
+@import url(./reset.css);
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+li {
+    list-style: none;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    color: floralwhite;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* background-image: url("https://source.unsplash.com/featured/?{nature},{night},{space},{Wallpapers},{morning},{sunset}"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.aside {
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    width: 10%;
+    float: left;
+}
+.aside i {
+    cursor: pointer;
+    font-size: 25px;
+}
+#weather {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow: hidden;
+}
+main {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    max-height: 60vh;
+}
+footer {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+#calendar{
+    justify-content: center;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: ivory;
+    padding: 0px 20px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-bottom: 2px solid ivory;
+    transition: 0.3s ease-in-out all;
+}
+#clock {
+    justify-content: center;
+    font-size: 100px;
+    text-align: center;
+    color: ivory;
+    padding: 0px 20px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-bottom: 2px solid ivory;
+    transition: 0.3s ease-in-out all;
+}
+
+main form {
+    width: 100%;
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    height: 30px;
+    width: 70%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid ivory;
+    transition: 0.3s ease-in-out all;
+    margin: 20px 0px;
+}
+input:focus{
+    width: 95%;
+    border: none;
+    border-bottom: 2px solid ivory;
+}
+input::placeholder{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.hidden {
+    display: none;
+}
+#para, #author {
+    display: inline-block;
+    margin: 10px; 
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.932)
+}
+#greeting {
+    display: inline-block;
+    width: 300px;
+    font-size: 30px;
+}
